@@ -1,0 +1,56 @@
+
+set hlsearch                                                                   
+set nocompatible
+set clipboard=unnamedplus					                                  
+set cursorline								                             
+set ignorecase 									                        
+set autoindent	                                  
+set tabstop=4                                    
+set shiftwidth=4                                
+set expandtab                                  
+set relativenumber                            
+set number
+
+
+nmap zj o<Esc>k
+nmap zk O<Esc>j
+
+" Toggle between case sensitive and insensitive
+nmap <F9> :set ignorecase! ignorecase?
+
+
+"Turn off search highlighting after enter untill next search
+nnoremap <CR> :noh<CR><CR> 
+
+" toggle between relative number and absolute number
+nnoremap <leader>n :set relativenumber!
+
+"Map jj as Escape in insert mode
+inoremap jj <ESC> 
+
+"map leader d as delete without cut.
+nnoremap <leader>d "_d
+xnoremap <leader>d "_d
+xnoremap <leader>p "_dP
+nnoremap <leader>dd "_dd
+xnoremap <leader>dd "_dd
+
+" Easier way to move between split windows 
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+
+" Back to the las window
+nnoremap <BS> <C-^>
+
+" don't lose selection when indenting
+vnoremap < <gv
+vnoremap > >gv
+
+"""""""""""""""" IDEA Specific """""""""""""""""""""
+nmap ga :action GotoAction<CR>
+nmap gr :action RecentFiles<CR>
+nmap gn :action GotoFile<CR>
+
+

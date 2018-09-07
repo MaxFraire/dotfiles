@@ -1,0 +1,12 @@
+[user]
+	email = maxfraire94@gmail.com
+	name = MaxFraire
+[credential]
+	helper = osxkeychain
+
+
+[oh-my-zsh]
+	hide-status = 0
+	hide-dirty = 1
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
